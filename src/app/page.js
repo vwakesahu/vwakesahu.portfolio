@@ -1,13 +1,9 @@
-'use client'
+"use client";
 import Homepage from "@/modules/home";
 import React from "react";
 
 const Page = () => {
-  return (
-    <div className="flex flex-col items-center justify-center">
-      <Homepage />
-    </div>
-  );
+  return <Homepage />;
 };
 
 export default Page;
