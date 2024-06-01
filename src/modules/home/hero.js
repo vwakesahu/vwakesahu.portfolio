@@ -6,7 +6,12 @@ const navItems = ["@vwakesahu", "portfolio"];
 const Hero = () => {
   return (
     <div className="w-full grid gap-10">
-      <Navbar arr={navItems} duration={1500} />
+      <Navbar
+        arr={navItems}
+        duration={2000}
+        href={"https://github.com/vwakesahu/vwakesahu.portfolio"}
+        newTab={true}
+      />
       <p className="text-[4.5rem] md:text-[7.4rem] font-semibold leading-extra-tight selection:bg-yellow-200">
         It&rsquo;s time. Ready to build your idea over six weeks?
       </p>
