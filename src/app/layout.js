@@ -14,10 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} p-4 md:flex md:flex-col md:items-center min-h-[100vh]`}>
-        <div className="md:max-w-6xl">{children}</div>
-      </body>
+      <body className={`${inter.className} p-4`}>{children}</body>
     </html>
   );
 }

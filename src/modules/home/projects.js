@@ -1,16 +1,5 @@
-import { Calendar } from "@/components/ui/calendar";
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from "@/components/ui/command";
-import { cn } from "@/lib/utils";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
-import { CalendarIcon, FileTextIcon, InputIcon } from "@radix-ui/react-icons";
-import { Share2Icon } from "lucide-react";
+import { FileTextIcon, InputIcon } from "@radix-ui/react-icons";
 
 let notifications = [
   {
@@ -51,7 +40,7 @@ const features = [
     Icon: FileTextIcon,
     name: "Jobshunt",
     description: "Your on the go job searching website.",
-    href: "/",
+    href: "/jobshunt",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (

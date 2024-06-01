@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -50,11 +49,16 @@
   }
 }
 
-
-/* .text1 {
-  font-family: var(--font-capriola);
+@font-face {
+  font-family: "Virgil";
+  src: url("/fonts/Virgil.woff2") format("woff2");
 }
 
-.text2 {
+.excaliDraw {
+  font-family: "Cascadia", sans-serif;
+}
+
+
+/* .text2 {
   font-family: var(--font-advent-pro);
 } */
