@@ -1,9 +1,9 @@
 'use client'
 import Navbar from "@/components/navbar";
-import Index from "@/modules/jobshunt";
+import Index from "@/modules/FBE";
 import React from "react";
-const navItems = ["Jobshunt", "Home"];
-const Page = () => {
+const navItems = ["Frames", "Home"];
+const FBE = () => {
   return (
     <div className="md:flex md:items-center md:justify-center">
       <div className="w-full md:max-w-6xl">
@@ -14,4 +14,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default FBE;

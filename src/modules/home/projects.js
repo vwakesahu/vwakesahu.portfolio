@@ -55,7 +55,7 @@ const features = [
     Icon: InputIcon,
     name: "Frames: by half engineers",
     description: "An online e-commerce store to purchase frames.",
-    href: "/",
+    href: "/fbe",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
