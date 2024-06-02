@@ -1,5 +1,6 @@
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { FileTextIcon, InputIcon } from "@radix-ui/react-icons";
+import { Video } from "lucide-react";
 
 let notifications = [
   {
@@ -62,6 +63,21 @@ const features = [
       <div className="flex h-full items-center justify-center absolute right-10 top-10 w-[70%] origin-top translate-x-0 border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10">
         <div className=" flex items-center md:text-lg ">
           <img src={"./frames.png"} alt="logo" />
+        </div>
+      </div>
+    ),
+  },
+  {
+    Icon: Video,
+    name: "Streamer",
+    description: "Dive Into the Stream.",
+    href: "/streamer",
+    cta: "Learn more",
+    className: "col-span-3 lg:col-span-2",
+    background: (
+      <div className="flex h-full items-center justify-center absolute right-10 top-10 w-[70%] origin-top translate-x-0 border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10">
+        <div className=" flex items-center md:text-lg ">
+          <img src={"./streamer.png"} alt="logo" />
         </div>
       </div>
     ),

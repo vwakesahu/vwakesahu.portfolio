@@ -1,6 +1,7 @@
 "use client";
-import Index from "@/modules/jobshunt";
+import Index from "@/modules/streamer";
 import React from "react";
+
 const Page = () => {
   return <Index />;
 };
