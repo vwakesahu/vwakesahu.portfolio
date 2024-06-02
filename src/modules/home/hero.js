@@ -1,9 +1,15 @@
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
-import WordRotate from "@/components/ui/wordRotate";
 import React from "react";
 const navItems = ["@vwakesahu", "portfolio"];
 const Hero = () => {
+  const handleOpenResume = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.pdf";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.click();
+  };
   return (
     <div className="w-full grid gap-10">
       <Navbar
@@ -16,7 +22,9 @@ const Hero = () => {
         It&rsquo;s time. Ready to build your idea over six weeks?
       </p>
       <div>
-        <Button className="rounded-none py-8 px-12">See my projects</Button>
+        <Button className="rounded-none py-8 px-12" onClick={handleOpenResume}>
+          See Resume
+        </Button>
       </div>
     </div>
   );
