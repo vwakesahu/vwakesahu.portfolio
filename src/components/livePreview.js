@@ -1,3 +1,4 @@
+import { Link1Icon } from "@radix-ui/react-icons";
 import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
 
@@ -5,13 +6,13 @@ const LivePreview = ({ href }) => {
   return (
     <div>
       <div className="mt-10 md:mt-0 flex flex-col gap-10">
-        <div className="flex gap-4">
-          <p className="text-3xl md:text-[3rem] font-semibold">Live Preview</p>
+        <div className="flex gap-4 items-center">
+          <p className="text-[1.5rem] md:text-[2rem] font-semibold">Live Preview</p>
           <a
             href={href}
             target="_blank"
             className="w-10 h-10 rounded-full border-2 hover:border-black flex items-center justify-center hover:-rotate-45 hover:bg-primary transition-all ease-in-out duration-500 cursor-pointer hover:scale-125">
-            <IoMdArrowForward className="rounded-full" />
+            <Link1Icon className="rounded-full" />
           </a>
         </div>
 
