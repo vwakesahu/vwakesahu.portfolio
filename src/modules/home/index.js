@@ -2,13 +2,14 @@ import React from "react";
 import Hero from "./hero";
 import { Projects } from "./projects";
 import dynamic from "next/dynamic";
+import ContactMe from "@/components/contactMe";
 
-const InProgress = dynamic(() => import("@/components/inProgress"), { ssr: false });
+// const InProgress = dynamic(() => import("@/components/inProgress"), { ssr: false });
 
 const Homepage = () => {
   return (
     <div className="md:flex md:flex-col md:items-center min-h-[100vh]">
-      <InProgress />
+      {/* <InProgress /> */}
       <div className="md:max-w-6xl">
         <div className="flex flex-col items-center justify-center">
           <Hero />
@@ -19,6 +20,8 @@ const Homepage = () => {
               <Projects />
             </div>
           </div>
+
+          {/* <ContactMe /> */}
         </div>
       </div>
     </div>
