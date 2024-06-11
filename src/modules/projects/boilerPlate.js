@@ -3,8 +3,9 @@ import LivePreview from "../../components/livePreview";
 import Flow from "../../components/flow";
 import Navbar from "@/components/navbar";
 import { Story } from "@/components/story";
+import { AlertHeadsUps } from "@/components/alert";
 
-const BoilerPlate = ({ projectData }) => {
+const BoilerPlate = ({ projectData, pathName }) => {
   return (
     <div className="md:flex md:items-center md:justify-center">
       <div className="w-full md:max-w-6xl">
@@ -16,6 +17,8 @@ const BoilerPlate = ({ projectData }) => {
               description={projectData.description}
               icons={projectData.icons}
             />
+            {pathName === "/streamer" && <AlertHeadsUps />}
+
             <Flow images={projectData.imgPaths} />
             <LivePreview href={projectData.livePreview} />
           </div>

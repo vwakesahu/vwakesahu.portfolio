@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <div>
       {projectData ? (
-        <BoilerPlate projectData={projectData} />
+        <BoilerPlate projectData={projectData} pathName={pathname} />
       ) : (
         <div className="min-h-[79vh]"></div>
       )}
